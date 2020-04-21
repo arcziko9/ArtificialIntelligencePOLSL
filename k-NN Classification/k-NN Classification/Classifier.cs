@@ -18,8 +18,8 @@ namespace k_NN_Classification
         {
             this.pathData = pathData;
             this.pathParameter = pathParameter;
-            SaveDb(pathData);
-            SaveObject();
+            LoadData(pathData);
+            LoadParameter();
         }
 
         public string Solve()
@@ -39,7 +39,7 @@ namespace k_NN_Classification
             return GetType(result);
         }
 
-        private void SaveDb(string path)
+        private void LoadData(string path)
         {
             string[] lines = File.ReadAllLines(path);
 
@@ -50,7 +50,7 @@ namespace k_NN_Classification
             }
         }
 
-        private void SaveObject()
+        private void LoadParameter()
         {
             string data = File.ReadAllText(pathParameter);
             List<string> tmp = data.Split(',').ToList();

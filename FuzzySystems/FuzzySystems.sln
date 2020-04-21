@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzySystems", "FuzzySystems\FuzzySystems.csproj", "{0A1FF98D-88DB-4595-9F99-1BC3882E7519}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A1FF98D-88DB-4595-9F99-1BC3882E7519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A1FF98D-88DB-4595-9F99-1BC3882E7519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A1FF98D-88DB-4595-9F99-1BC3882E7519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A1FF98D-88DB-4595-9F99-1BC3882E7519}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3F9A167-D7EB-4E57-873F-520E6592FC95}
+	EndGlobalSection
+EndGlobal
