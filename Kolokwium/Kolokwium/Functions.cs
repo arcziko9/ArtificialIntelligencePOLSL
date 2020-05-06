@@ -20,20 +20,19 @@ namespace Kolokwium
             return sum;
         }
         public static double BipolarLinearFunction(double input) // activation function
-         => (1 - Math.Pow(Math.E, -Alpha * input)) / (1 + Math.Pow(Math.E, -Alpha * input));
-
+        {
+            return (1 - Math.Pow(Math.E, -Alpha * input)) / (1 + Math.Pow(Math.E, -Alpha * input));
+        }
         public static double BipolarDifferential(double input) // activation function derivative
-            => (2 * Alpha * Math.Pow(Math.E, -Alpha * input)) / (Math.Pow(1 + Math.Pow(Math.E, -Alpha * input), 2));
+        {
+            return (2 * Alpha * Math.Pow(Math.E, -Alpha * input)) / (Math.Pow(1 + Math.Pow(Math.E, -Alpha * input), 2));
+        }
 
         public static double SigmoidFunction(double input)
         {
             return 1 / (1 + Math.Exp(-input));
         }
 
-        public static double SigmoidFunctionDeriative(double input)
-        {
-            return SigmoidFunction(input) * (1 - SigmoidFunction(input));
-        }
 
         public static double CalculateError(List<double> outputs, int row, double[][] ExceptedResults)
         {

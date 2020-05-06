@@ -50,7 +50,6 @@ namespace Kolokwium
             double[][] expectedValue30;
             double[][] trainData70;
             double[][] dataToCheck30;
-            double[][] testData70;
 
             data70 = new double[(int)(data.Length * 0.7)][];
             data30 = new double[data.Length - data70.Length][];
